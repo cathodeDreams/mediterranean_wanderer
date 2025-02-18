@@ -1,0 +1,48 @@
+[project]
+name = "island-rl"
+version = "0.1.0"
+description = "A cozy procedurally generated Greek island exploration game"
+authors = [
+    {name = "cathodeDreams",email = "cathodedream240@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "tcod>=15.0.0",        # Core roguelike functionality
+    "numpy>=1.24.0",       # Required for terrain generation and array operations
+    "pytest>=7.4.0",       # For TDD testing
+    "pytest-cov>=4.1.0",   # Test coverage reporting
+    "black>=23.0.0",       # Code formatting
+    "isort>=5.12.0",       # Import sorting
+    "mypy>=1.5.0",         # Static type checking
+]
+
+[tool.poetry]
+packages = [{include = "island_rl", from = "src"}]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=src"
+markers = [
+    "integration: marks tests as integration tests that test multiple components together",
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

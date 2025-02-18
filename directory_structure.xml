@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <directory name=".">
+    <file name="context.md"></file>
+    <file name="directory_structure.xml"></file>
+    <directory name="docs">
+      <file name="game-design.md"></file>
+      <file name="technical_report.md"></file>
+    </directory>
+    <file name="mypy.txt"></file>
+    <file name="pyproject.toml"></file>
+    <file name="pytest.txt"></file>
+    <file name="README.md"></file>
+    <directory name="src">
+      <directory name="island_rl">
+        <directory name="assets">
+          <file name="dejavu10x10_gs_tc.png"></file>
+        </directory>
+        <file name="engine.py"></file>
+        <file name="__init__.py"></file>
+        <file name="interaction.py"></file>
+        <file name="inventory.py"></file>
+        <file name="items.py"></file>
+        <file name="locations.py"></file>
+        <file name="__main__.py"></file>
+        <file name="message_log.py"></file>
+        <file name="player.py"></file>
+        <file name="time_system.py"></file>
+        <file name="weather_system.py"></file>
+        <file name="world.py"></file>
+      </directory>
+    </directory>
+    <directory name="tests">
+      <file name="__init__.py"></file>
+      <file name="test_biomes.py"></file>
+      <file name="test_engine.py"></file>
+      <file name="test_interaction.py"></file>
+      <file name="test_inventory.py"></file>
+      <file name="test_items.py"></file>
+      <file name="test_locations.py"></file>
+      <file name="test_main.py"></file>
+      <file name="test_message_log.py"></file>
+      <file name="test_player.py"></file>
+      <file name="test_time_system.py"></file>
+      <file name="test_weather_system.py"></file>
+      <file name="test_world.py"></file>
+    </directory>
+  </directory>
+  <report>
+    <directories>6</directories>
+    <files>34</files>
+  </report>
+</tree>
