@@ -48,8 +48,8 @@ Mediterranean Wanderer is a relaxing roguelike-inspired game where players explo
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
-cd island-rl
+git clone https://github.com/cathodeDreams/mediterranean_wanderer.git
+cd mediterranean_wanderer
 ```
 
 2. Install dependencies using Poetry:
@@ -139,7 +139,12 @@ island_rl/
 
 ## License
 
-[Your chosen license]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Note
+
+- Brainstorming currently for NPC + Village implementation using llama-cpp-python
+- Planning to integrate local LLM for dynamic NPC interactions and village life simulation
 
 ## Contributing
 
