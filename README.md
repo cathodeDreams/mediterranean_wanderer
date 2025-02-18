@@ -146,6 +146,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Brainstorming currently for NPC + Village implementation using llama-cpp-python
 - Planning to integrate local LLM for dynamic NPC interactions and village life simulation
 
-## Contributing
-
-[Your contribution guidelines]
